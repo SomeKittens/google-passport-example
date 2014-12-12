@@ -8,7 +8,7 @@ var host = require('./config').host;
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: 'http://www.google-passport-example.herokuapp.com/auth/google/callback'
+    callbackURL: host + '/auth/google/callback'
   },
   function(accessToken, refreshToken, profile, done) {
     console.log(profile);
