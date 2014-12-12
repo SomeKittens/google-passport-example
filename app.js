@@ -1,9 +1,9 @@
-var express = require('express');
+var express = require('express'),
   path = require('path'),
   favicon = require('serve-favicon'),
   logger = require('morgan'),
   cookieParser = require('cookie-parser'),
-  bodyParser = require('body-parser')
+  bodyParser = require('body-parser'),
   session = require('express-session');
 
 var routes = require('./routes/index'),
